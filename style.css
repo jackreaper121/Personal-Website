@@ -28,6 +28,8 @@ body{
     position: absolute;
     margin-top: 15%;
     margin-left: 45%;
+    background-color: #F64040;
+    color: #FFFFFF;
 
 }
 
@@ -84,7 +86,7 @@ body{
 
 
 .art2{
-    background-image:url("http://lorempixel.com/output/abstract-q-c-500-500-6.jpg");
+    background-image:url("http://lorempixel.com/output/abstract-q-c-640-480-1.jpg");
     font-family: 'Droid Serif', serif;
     -webkit-animation: hiMove 4s infinite;
     transition:background 3s ease-in;

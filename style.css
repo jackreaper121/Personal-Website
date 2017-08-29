@@ -1,25 +1,26 @@
 
-body{
-    background: #3A0839 !important;
-}
+/*body{*/
+    /*background: #3A0839 !important;*/
 
+/*}*/
 
 
 .title{
 
     position: absolute;
-    top: 0%;
+    top: -15px;
     width: 100%;
-
+    z-index: -1;
     right: 34%;
 }
-
 
 
 .button1{
     position: absolute;
     margin-top: 15%;
     margin-left: 30%;
+    background-color: #FFFFFF;
+    color:#FCE2A7;
 
 
 }
@@ -30,6 +31,8 @@ body{
     margin-left: 45%;
     background-color: #F64040;
     color: #FFFFFF;
+    text-decoration: none;
+    z-index: -1;
 
 }
 
@@ -39,6 +42,7 @@ body{
     margin-left: 60%;
     background-color: #8A2793;
     color: black;
+    z-index: -1;
 }
 
 .button4{
@@ -55,6 +59,14 @@ body{
     margin-left: 52.5%;
 }
 
+.button6{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 45%;
+    color: silver;
+    background-color: #000;
+}
+
 .btn-circle.btn-xl {
     width: 100px;
     height: 100px;
@@ -62,6 +74,7 @@ body{
     font-size: 34px;
     line-height: 1.33;
     border-radius: 50%;
+
 }
 
 .wrapper{
@@ -76,26 +89,12 @@ body{
     text-align:center;
     line-height:300px;
     font-size:8rem;
+    font-family: 'Droid Serif', serif;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: #FF8300;
     font-weight: bold;
     background-repeat: no-repeat;
 }
-
-
-.art2{
-    background-image:url("http://lorempixel.com/output/abstract-q-c-640-480-1.jpg");
-    font-family: 'Droid Serif', serif;
-    -webkit-animation: hiMove 4s infinite;
-    transition:background 3s ease-in;
-
-}
-
-
-
-
 
 
 @-webkit-keyframes hiMove {
@@ -115,4 +114,70 @@ body{
     .article{
         width:100%;
     }
+}
+
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.dropLoc
+{
+    position: absolute;
+    margin-top: 22.5%;
+    margin-left: 30%;
 }

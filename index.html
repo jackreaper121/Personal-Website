@@ -11,25 +11,35 @@
 
 </head>
 
-<body>
+<body style="overflow: auto">
 
 
 <!--<h1 class="title" style="color: #F64040" >Welcome to syedjavaid.com</h1>-->
 
+    <div class="background"></div>
+    <!--<div class="overlay"></div>-->
+
 
     <div class='article art2 title'>
-        Welcome..
+        Welcome...
     </div>
 
-    <button id="1" class="btn btn-circle btn-xl button1"><i class="fa fa-folder-open" aria-hidden="true"></i></button>
-    <button id="2" class="btn btn-circle btn-xl button2"><i class="fa fa-user" aria-hidden="true"></i></button>
-    <button id="3" class="btn btn-circle btn-xl button3" onclick="window.location.href = 'https://github.com/jackreaper121'"><i class="fa fa-github text-left" aria-hidden="true"></i></button>
-    <button id="4" class="btn btn-circle btn-xl button4" onclick="window.location.href = 'https://www.linkedin.com/in/syed-javaid/'" ><i class="fa fa-linkedin" aria-hidden="true"></i></button>
-    <button id="5" class="btn btn-circle btn-xl button5"></button>
+    <button id="1" class="btn btn-circle btn-xl button1" onclick="dropDown()" ><span title="My Projects"><i class="fa fa-folder-open" aria-hidden="true"> </i></span></button>
+    <button id="2" class="btn btn-circle btn-xl button2"><span title="About me"> <i class="fa fa-user" aria-hidden="true"></i></span></button>
+    <button id="3" class="btn btn-circle btn-xl button3" onclick="window.location.href = 'https://github.com/jackreaper121'"><span title="Github Account"><i class="fa fa-github text-left" aria-hidden="true"></i></span></button>
+    <button id="4" class="btn btn-circle btn-xl button4" onclick="window.location.href = 'https://www.linkedin.com/in/syed-javaid/'" ><span title="Linkedin Account"><i class="fa fa-linkedin" aria-hidden="true"></i></span></button>
+    <button id="5" class="btn btn-circle btn-xl button5"><span title="Yet to decide what this button is meant to be"><i class="fa fa-id-card" aria-hidden="true"></i> </span> </button>
+    <button id="6" class="btn btn-circle btn-xl button6 disabled"><span title="Under construction"><i class="fa fa-wrench" aria-hidden="true"></i> </span></button>
 
+<div id="myDrop" class="dropdown-content dropLoc">
+    <a href="https://quazih.github.io/Brownian-Motion-3D/">Brownian Motion Program</a>
+    <a href="https://jackreaper121.github.io/WeatherApplication/">Weather Website</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="geometryangle.min.js"></script>
 <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
-
-
+<script src="hello.js"></script>
 
 
 </body>

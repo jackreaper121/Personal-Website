@@ -78,7 +78,7 @@ $(document).ready(function(){
             ambient: 'rgba(97,0,94, 1)',
             diffuse: 'rgba(97,18,94, 1)',
             speed: 0.001,
-            gravity: 100,
+            gravity: 500,
 
             // Dampening of light's movements.
             dampening: 0.50,
@@ -87,8 +87,8 @@ $(document).ready(function(){
             maxLimit: null,
             minDistance: 20,
             maxDistance: 400,
-            autopilot: false,
-            draw: false, //show circle
+            autopilot: true,
+            draw: true, //show circle
             bounds: FSS.Vector3.create(),
             step: FSS.Vector3.create(
                 Math.randomInRange(0.2, 1.0),
@@ -101,11 +101,11 @@ $(document).ready(function(){
 // specify the thickness, color, stroke, etc.
         line: {
 
-            fill: "rgba(0, 0, 0, 0)",
+            fill: "rgba(255, 0, 0, 0)",
             thickness: 1,
             fluctuationIntensity: 0,
             fluctuationSpeed: 0.5,
-            draw: false
+            draw: true
 
         },
 
@@ -126,10 +126,27 @@ $(document).ready(function(){
 
             // Instead of setting alpha channel to zero
             // Set draw to false to avoid computing.
-            draw: false
+            draw: true
 
         }
 
     });
 
+
+
+
+
+
 });
+
+function loop() {
+    document.getElementById('signature').innerHTML = ""
+}
+
+
+
+
+
+
+
+

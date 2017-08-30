@@ -139,11 +139,6 @@ $(document).ready(function(){
 
 });
 
-function loop() {
-    document.getElementById('signature').innerHTML = ""
-}
-
-
 
 
 

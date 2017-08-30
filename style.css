@@ -35,8 +35,6 @@
     color: #FFFFFF;
     margin-top: 15%;
     margin-left: 7.5%;
-
-
     z-index: 2;
 
 }
@@ -148,7 +146,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 3;
+    z-index: 10;
 }
 
 /* Links inside the dropdown */
@@ -167,24 +165,20 @@
 
 .dropLoc
 {
-    position: absolute;
-    margin-top: 22.5%;
-    margin-left: 30%;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    z-index: 10;
+
+
 }
 
 .cornerSignature{
    z-index: 4;
-
-
-
-
 }
 
 svg{
-
     position: absolute ;
     bottom: 0%;
     right: 0%;
-
-
 }

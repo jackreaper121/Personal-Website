@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Syed Javaid Website</title>
-
     <link rel="stylesheet" type="text/css" href="style.css" >
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <!-- Latest compiled and minified CSS -->
@@ -18,7 +17,7 @@
 <!--<h1 class="title" style="color: #F64040" >Welcome to syedjavaid.com</h1>-->
 
     <div class="background"></div>
-    <div class="overlay"></div>
+    <div class="newlay"></div>
 
 
     <div class='article art2 title'>
@@ -26,22 +25,49 @@
     </div>
 <div class="content">
     <button id="1" data-balloon="My Projects" data-balloon-pos="up" class="btn btn-circle btn-xl button1"  onclick="dropDown()" ><i class="fa fa-folder-open" aria-hidden="true"> </i></button>
-    <button id="2" data-balloon="About me" data-balloon-pos="up" class="btn btn-circle btn-xl button2"> <i class="fa fa-user" aria-hidden="true"></i></button>
+    <button id="2" data-balloon="About me" data-balloon-pos="up"  class="btn btn-circle btn-xl button2" onclick="popup(2)">  <i class="fa fa-user" aria-hidden="true" style="color: white" ></i></button>
     <button id="3" data-balloon="GitHub" data-balloon-pos="up" class="btn btn-circle btn-xl button3" onclick="window.location.href = 'https://github.com/jackreaper121'"><i class="fa fa-github text-left" aria-hidden="true"></i></button>
     <button id="4" data-balloon="LinkedIn" data-balloon-pos="up" class="btn btn-circle btn-xl button4" onclick="window.location.href = 'https://www.linkedin.com/in/syed-javaid/'" ><i class="fa fa-linkedin" aria-hidden="true"></i></button>
-    <button id="5" data-balloon="Contact" data-balloon-pos="up" class="btn btn-circle btn-xl button5" onclick=""> <i class="fa fa-envelope" aria-hidden="true"></i> </button>
+    <button id="5" data-balloon="Contact" data-balloon-pos="up" class="btn btn-circle btn-xl button5" onclick="popup(5)"> <i class="fa fa-envelope" aria-hidden="true"></i> </button>
     <button id="6" data-balloon="Under Construction" data-balloon-pos="down" class="btn btn-circle btn-xl button6 disabled"><i class="fa fa-wrench" aria-hidden="true"></i> </button>
 </div>
+
 <div id="myDrop" class="dropdown-content dropLoc">
     <a href="https://quazih.github.io/Brownian-Motion-3D/">Brownian Motion Program</a>
     <a href="https://jackreaper121.github.io/WeatherApplication/">Weather Website</a>
 </div>
+
+<div id="myModal1" class="modal">
+<div id="myAboutContent" class="modal-content">
+    <h1>About</h1>
+    <p>My name is Syed and this is my website. I'm currently a student at Queens College studying Computer Science. I picked up coding early and it went from a hobby to a passion.
+        I aspire to produce work that makes an impact and makes the world a better place. I try everyday to improve my skills and craft to produce the best work that I can. At the moment my current endeavor
+        is learning GOLANG and becoming proficient with this language.
+        <br> <br>
+        Languages: Java, C++ , HTML, CSS, JavaScript, and many more to come
+    </p>
+</div>
+</div>
+
+<div id="myModal2" class="modal">
+<div id="myContact" class="modal-content">
+    <h1>Contact me</h1>
+    <p>Email: <span id="email" > s.java458@gmail.com </span></p>
+    <button id="copyButton" class="btn btn-primary" data-balloon="Copy to Clipboard" data-balloon-pos="down" id="copy" onclick="copyToClipboard('email');colorChange()">Copy</button>
+</div>
+</div>
+
+
+
+
 
 <div id="signature">
 <svg width="110" height="101.00000000000001" xmlns="http://www.w3.org/2000/svg" style="" >
     <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
         <title>Layer 1</title>
+    <style>.azyVygAF_3{
+        stroke:#ffffff}</style>
         <path id="svg_10" d="m3.5,159.5" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff" class="azyVygAF_2"></path>
         <path d="m18.166733,101.33324c0.666666,-1.666664 5.359252,-9.648552 12.333312,-19.666634c12.04484,-17.302155 21.820002,-31.467827 30.333277,-42.666586c7.183308,-9.449259 9.741409,-12.945511 11.666645,-15.666638c0.694153,-0.981115 0.666664,-1.333331 0.333336,-1.333331c-1.666664,0 -4.998173,1.954552 -9.999985,6.666655c-3.949627,3.72086 -9.492096,9.158928 -14.999973,14.333309c-4.466431,4.195995 -6.760826,5.994984 -7.999985,7.999985c-0.554167,0.89666 -0.56308,2.178303 0,2.66666c2.38895,2.071926 7.628979,2.473038 12.333313,3.66666c2.978786,0.755802 5.469635,1.592117 6.333321,3.333328c0.797653,1.608093 1.475922,4.842407 -2.333328,9.999981c-5.601238,7.583847 -13.153542,12.299828 -21.333296,16.999969c-6.205467,3.565704 -8.666653,4.666656 -10.666647,5.333321c-0.999999,0.333336 -1.280048,-0.92009 2.666662,-4.999985c6.563324,-6.784805 16.514044,-14.57756 28.666613,-21.999962c7.903976,-4.827496 16.278534,-8.277271 20.666634,-8.999985c3.305412,-0.544399 4.666656,-0.666664 5.999985,-0.666664c0.333336,0 0.735863,0.007263 0.666664,0.333332c-0.681511,3.211426 -4.503296,10.067669 -7.333321,16.666637c-3.468544,8.087852 -6.372375,13.656212 -7.333317,17.333298c-0.694992,2.659424 -1.304722,4.473465 -0.666664,4.666656c2.300552,0.696548 7.72028,-11.642143 13.333309,-23.999954c7.404198,-16.301292 13.325539,-33.880758 17.333298,-45.33325c2.541893,-7.263662 3.811775,-12.105107 4.666664,-14.999972c0.211098,-0.714834 0.333328,-0.999998 0.333328,-0.999998c-3.333328,4.333325 -7.592453,11.536963 -12.666641,21.999961c-3.515022,7.247984 -7.494934,16.275459 -9.333321,21.666626c-1.463295,4.29118 -1.666664,6.333321 -1.666664,7.666653c0,0.333332 0.806435,0.704514 3,-0.333332c4.764122,-2.254055 9.666649,-6.999989 13.999969,-9.999981l2.333336,-1.999996l1.333328,-0.666668" id="svg_76" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" class="azyVygAF_3"></path>
     </g>
@@ -49,7 +75,7 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="geometryangle.min.js"></script>
 <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 <script src="vivus.js"></script>

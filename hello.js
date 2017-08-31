@@ -139,9 +139,64 @@ $(document).ready(function(){
 
 });
 
+function popup(x) {
+    var id = x;
+    var modal;
+
+    var btn = document.getElementById(id);
+
+    if (id == 2) {
+        modal = document.getElementById('myModal1');
+        modal.style.display = "block";
+
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+    }
+    else {
+        modal = document.getElementById('myModal2');
+        modal.style.display = "block";
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                if (document.getElementById('copyButton').classList.contains("btn-success"))
+                document.getElementById('copyButton').classList.remove("btn-success");
+                document.getElementById('copyButton').classList.add("btn-primary");
+                document.getElementById('copyButton').setAttribute('data-balloon',"Copy to Clipboard");
 
 
 
 
+            }
+
+        }
 
 
+
+    }
+}
+
+
+function copyToClipboard(elementId) {
+    var aux = document.createElement("input");
+    aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(aux);
+}
+
+function colorChange() {
+    document.getElementById('copyButton').classList.remove("btn-primary");
+    document.getElementById('copyButton').classList.add("btn-success");
+    document.getElementById('copyButton').setAttribute('data-balloon',"Copied to Clipboard");
+
+
+}

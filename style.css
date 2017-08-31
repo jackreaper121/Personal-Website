@@ -25,7 +25,7 @@
     margin-left: 30%;
     background-color: #FFFFFF;
     color:#FCE2A7;
-    z-index: 10;
+    z-index: 0;
 
 }
 
@@ -35,7 +35,7 @@
     color: #FFFFFF;
     margin-top: 15%;
     margin-left: 7.5%;
-    z-index: 2;
+    z-index: 0;
 
 }
 
@@ -43,7 +43,7 @@
     position: absolute;
     background-color: #8A2793;
     color: black;
-    z-index: 2;
+    z-index: 0;
     margin-top: 15%;
     margin-left: 7.5%;
 }
@@ -54,14 +54,14 @@
     margin-left: 37.5%;
     background-color: #0077B5;
     color: #FFFFFF;
-    z-index: 2;
+    z-index: 0;
 }
 
 .button5{
     position: absolute;
     margin-top: 2.5%;
     margin-left: 7.5%;
-    z-index: 2;
+    z-index: 0;
     background-color: #fa7a79;
     color: white;
 }
@@ -72,7 +72,7 @@
     margin-left: 45%;
     color: silver;
     background-color: #000;
-    z-index: 2;
+    z-index: 0;
 }
 
 .btn-circle.btn-xl {
@@ -99,9 +99,10 @@
     font-size:8rem;
     font-family: 'Droid Serif', serif;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: #FF8300;
+    -webkit-text-fill-color: white;
     font-weight: bold;
     background-repeat: no-repeat;
+
 }
 
 
@@ -113,7 +114,7 @@
     bottom: 0;
     z-index: -999;
 }
-.overlay {
+.newlay {
     position: fixed;
     left: 0;
     right: 0;
@@ -152,6 +153,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
+
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -182,3 +184,28 @@ svg{
     bottom: 0%;
     right: 0%;
 }
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 20%;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(58,8,57,.25);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 50%
+}
+
+
+
